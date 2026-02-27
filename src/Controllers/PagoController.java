@@ -1,17 +1,17 @@
 package Controllers;
 
 import Models.CarritoCompras;
-import Views.VistaCarritoComprasView;
+import Views.VistaCarritoCompras;
 import Strategies.EstrategiaPago;
 
 /**
  * Controlador: Coordina Carrito y Vista
  */
-public class ControladorPagoController {
+public class PagoController {
     private CarritoCompras carrito;
-    private VistaCarritoComprasView vista;
+    private VistaCarritoCompras vista;
 
-    public ControladorPagoController(CarritoCompras carrito, VistaCarritoComprasView vista) {
+    public PagoController(CarritoCompras carrito, VistaCarritoCompras vista) {
         this.carrito = carrito;
         this.vista = vista;
     }
