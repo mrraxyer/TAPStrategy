@@ -1,6 +1,6 @@
 import Models.CarritoCompras;
-import Views.VistaCarritoComprasView;
-import Controllers.ControladorPagoController;
+import Views.VistaCarritoCompras;
+import Controllers.PagoController;
 import Strategies.*;
 
 /**
@@ -9,8 +9,8 @@ import Strategies.*;
 public class App {
     public static void main(String[] args) throws Exception {
         CarritoCompras carrito = new CarritoCompras();
-        VistaCarritoComprasView vista = new VistaCarritoComprasView();
-        ControladorPagoController controlador = new ControladorPagoController(carrito, vista);
+        VistaCarritoCompras vista = new VistaCarritoCompras();
+        PagoController controlador = new PagoController(carrito, vista);
 
         vista.mostrarEncabezado();
 
